@@ -192,6 +192,11 @@ nav {
     display: inline-block;
 }
 
+.hero-resultados i {
+    margin-right: 5px;
+    color: var(--b3afbf);
+}
+
 @keyframes gradientMove {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
@@ -294,6 +299,10 @@ nav {
     color: var(--0d1b2a);
 }
 
+.btn-primary i, .btn-secondary i {
+    margin-right: 8px;
+}
+
 /* =========================
    SECTIONS
 ========================= */
@@ -308,6 +317,14 @@ nav {
     margin-bottom: 40px;
     position: relative;
     color: var(--0d1b2a);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section h2 i {
+    color: var(--415a77);
+    font-size: 2rem;
 }
 
 .section h2::after {
@@ -383,6 +400,14 @@ nav {
     margin-bottom: 20px;
     position: relative;
     padding-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobre-resumo h3 i {
+    color: var(--415a77);
+    font-size: 1.8rem;
 }
 
 .sobre-resumo h3::before {
@@ -404,7 +429,7 @@ nav {
 }
 
 /* =========================
-   DESTAQUES ESTRATÉGICOS (NOVA SEÇÃO)
+   DESTAQUES ESTRATÉGICOS
 ========================= */
 .destaques-grid {
     display: grid;
@@ -429,9 +454,16 @@ nav {
     box-shadow: 0 20px 40px rgba(65, 90, 119, 0.15);
 }
 
-.destaque-icon {
+.destaque-card i {
     font-size: 2.5rem;
     margin-bottom: 15px;
+    color: var(--415a77);
+    transition: all 0.3s ease;
+}
+
+.destaque-card:hover i {
+    transform: scale(1.1);
+    color: var(--1b2c3b);
 }
 
 .destaque-card h3 {
@@ -485,6 +517,19 @@ nav {
 .card h3 {
     margin-bottom: 15px;
     color: var(--1b2c3b);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h3 i {
+    color: var(--415a77);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover h3 i {
+    transform: rotate(5deg) scale(1.1);
 }
 
 .card p {
@@ -560,6 +605,14 @@ nav {
     color: var(--0d1b2a);
     margin: 0;
     flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formacao-header h3 i {
+    color: var(--415a77);
+    font-size: 1.3rem;
 }
 
 .formacao-instituicao {
@@ -589,7 +642,7 @@ nav {
 }
 
 /* =========================
-   COMPETÊNCIAS (NOVA SEÇÃO)
+   COMPETÊNCIAS
 ========================= */
 .skills-container {
     display: flex;
@@ -616,6 +669,11 @@ nav {
 .skills-categoria h3 i {
     color: var(--415a77);
     font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.skills-categoria:hover h3 i {
+    transform: rotate(5deg) scale(1.1);
 }
 
 .skills-grid {
@@ -658,6 +716,11 @@ nav {
 .skills-soft h3 i {
     color: var(--415a77);
     font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.skills-soft:hover h3 i {
+    transform: rotate(5deg) scale(1.1);
 }
 
 .soft-list {
@@ -682,19 +745,28 @@ nav {
 
 .soft-item strong {
     color: var(--0d1b2a);
-    display: block;
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
     font-size: 1rem;
+}
+
+.soft-item strong i {
+    color: var(--415a77);
+    font-size: 1.1rem;
+    width: 20px;
 }
 
 .soft-item {
     color: var(--1b2c3b);
     line-height: 1.5;
     font-size: 0.95rem;
+    margin-left: 0;
 }
 
 /* =========================
-   EXPERIÊNCIA PROFISSIONAL (COM RESULTADOS EM DESTAQUE)
+   EXPERIÊNCIA PROFISSIONAL
 ========================= */
 .experiencia-container {
     max-width: 900px;
@@ -749,6 +821,14 @@ nav {
     color: var(--0d1b2a);
     margin-bottom: 5px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.exp-header h3 i {
+    color: var(--415a77);
+    font-size: 1.5rem;
 }
 
 .exp-cargo {
@@ -787,6 +867,14 @@ nav {
     font-weight: 600;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 8px rgba(65, 90, 119, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.resultado-badge i {
+    font-size: 0.9rem;
+    color: var(--e0e1dd);
 }
 
 .exp-competencias {
@@ -841,6 +929,14 @@ nav {
 .experiencia-item li strong {
     color: var(--0d1b2a);
     font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.experiencia-item li strong i {
+    color: var(--415a77);
+    font-size: 1rem;
 }
 
 .destaque-item {
@@ -894,6 +990,11 @@ nav {
 .certificacoes-categoria h3 i {
     color: var(--415a77);
     font-size: 1.4rem;
+    transition: all 0.3s ease;
+}
+
+.certificacoes-categoria:hover h3 i {
+    transform: rotate(5deg) scale(1.1);
 }
 
 .certificacoes-categoria ul {
@@ -909,19 +1010,19 @@ nav {
     font-size: 0.95rem;
     line-height: 1.5;
     border-bottom: 1px dashed var(--e0e1dd);
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .certificacoes-categoria li:last-child {
     border-bottom: none;
 }
 
-.certificacoes-categoria li::before {
-    content: "▹";
+.certificacoes-categoria li i {
     color: var(--415a77);
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    min-width: 18px;
 }
 
 .curriculo-link {
@@ -933,8 +1034,12 @@ nav {
     display: inline-block;
 }
 
+.curriculo-link .btn-primary i {
+    margin-right: 8px;
+}
+
 /* =========================
-   CONTATO (COM CHAMADA ESTRATÉGICA)
+   CONTATO
 ========================= */
 .contato-container {
     max-width: 600px;
@@ -957,6 +1062,15 @@ nav {
 .contato-chamada strong {
     color: var(--e0e1dd);
     font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.contato-chamada strong i {
+    color: var(--e0e1dd);
+    font-size: 1.2rem;
 }
 
 .contato-container p {
@@ -1024,6 +1138,11 @@ footer {
     text-align: center;
     padding: 30px;
     font-size: 0.95rem;
+}
+
+footer i {
+    margin: 0 5px;
+    color: var(--415a77);
 }
 
 /* =========================
@@ -1185,6 +1304,10 @@ footer {
         font-size: 28px;
     }
 
+    .section h2 i {
+        font-size: 1.8rem;
+    }
+
     /* Hero buttons */
     .hero-buttons { 
         flex-direction: column; 
@@ -1236,6 +1359,10 @@ footer {
 
     .destaque-card h3 {
         font-size: 1.5rem;
+    }
+
+    .destaque-card i {
+        font-size: 2rem;
     }
 
     /* Formação */
@@ -1403,6 +1530,10 @@ footer {
 @media (max-width: 480px) {
     .section h2 {
         font-size: 24px;
+    }
+
+    .section h2 i {
+        font-size: 1.5rem;
     }
 
     .hero h1 {
